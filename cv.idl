@@ -1,27 +1,63 @@
 # i really dunno what i'm doing yet
 
-contact_info {first_name,
-  last_name,
-  mobile_phone,
-  email
-  }
-objective
-summary
-skills {
-  category_1 {cat1_skill1 {
-      name, aptitude_lvl, yrs_exp, training}},
-      cat1_skill2 {
-      },
-  category_2 {
-    }, 
-  category_3 {
-  }}
-experience {job_1 {
-  org, title, start_date, end_date}},
-  job_2 {
-  }
-  }
-training {
-  school_1 {
-  name, location, start_date, end_date, degree, major, minor, specialty, gpa}
+{
+    "resume": {
+	"contact_info" : [
+		{
+          	"name": "string",
+          	"email": "string",
+          	"phone": "string"
+		}
+        ],
+	"summary" : [
+		{
+		"description" : "string",
+		"objective" : "string"
+		}
+	]
+	"skills" : [
+		{
+		category: [
+			{ 
+			"name": "string",
+				"skill" : [
+					{
+					"name": "string",
+					"aptitude": "string",
+					"aptitude_scale" : "string",
+					"years_experience" : "int",
+					"training": "string"
+					}
+				]
+			}
+		]
+		}		
+	]
+        "education": [
+            {
+	    "institution" : [
+		{
+		"name":"string",
+		"location": "string"
+		}
+	    ],
+            "degree": "string",
+	    "major": "string",
+	    "minor": "string",
+	    "specialty": "string",
+            "graduation_date": "date",
+	    "gpa": "float",
+	    "gpa_scale": "string"
+            }
+        ],
+        "work_experience": [
+            {
+                "company": "string",
+                "position": "string",
+                "startDate": "date",
+		"end_date": "date",
+		"responsibilities": "string"
+            }
+        ]
+    }
 }
